@@ -1,0 +1,50 @@
+.name-title {
+  @extend %weight-font-style;
+  color: $main-color;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.introduce {
+  border: 2px solid $main-color;
+  padding: 20px;
+  font-size: 15px;
+  @include position(relative);
+
+  p {
+    line-height: 1.8rem;
+  }
+
+  &::before {
+    @extend %weight-font-style;
+    @include pseudo(flex, '');
+    @include size(60px);
+    border-radius: 60px;
+    @include position(absolute, $top: 20px, $left: -100px);
+    background-image: url('%PUBLIC_URL%//image/avatar.jpg') center/cover
+      no-repeat;
+    font-size: 24px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ----- RWD ---- */
+@include mq('desktop') {
+  .introduce {
+    &::before {
+      top: -30px;
+      left: auto;
+      right: -30px;
+    }
+  }
+}
+
+@include mq('phone-l') {
+  .introduce {
+    &::before {
+      display: none;
+    }
+  }
+}
