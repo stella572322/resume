@@ -78,24 +78,17 @@ const FINAL_PROJECT = ({ visible, showModal, hideModal }) => (
 
 const GmailDemo = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
-    <h3 className="title">Gmail - 求職信範例
+    <h3 className="title">網站復刻專案： Gmail - Demo
       <a href="https://lidemy.github.io/jd-example/mail/desktop/index.html" rel="noopener noreferrer" target="_blank">Demo</a>
       <a href="https://github.com/Lidemy/gmail-demo" rel="noopener noreferrer" target="_blank">Github Repo</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible2')}>
-      <p className="summary">此為跟導師 Huli 合作的「理想徵才文」專案，我負責的部分是利用 HTML 及 CSS 切出一個完整的 gmail 求職信。</p>
+      <p className="summary">此為跟導師 Huli 合作的<a href="https://lidemy.github.io/jd-example/jd/" rel="noopener noreferrer" target="_blank">【 理想徵才文 】</a>專案，我負責的部分是利用 HTML 及 CSS 切出一個完整的 gmail 求職信。</p>
       <ul className="info print--hide">
-        <h5>功能</h5>
-        <li>支持多層子留言及按讚功能、登入狀態會標示出原 po 的留言</li>
-        <li>完成操作時會顯示回饋訊息、留言以 Ajax 方式操作</li>
-        <li>會員系統：註冊、登入區塊</li>
-        <li>會員權限系統：一般管理員可管理自己的留言、管理員有後台操作所有留言</li>
-      </ul>
-      <ul className="info">
-        <h5>技術</h5>
-        <li>後端： <code>PHP</code> 基本的 CRUD 操作</li>
-        <li>資訊安全： 防 <code>XSS</code>、<code>SQL Injection</code> </li>
-        <li>部署： Server 為 <code>Apache</code>、部署到 Ditgital Ocean</li>
+        <h5>成果</h5>
+        <li>復刻電腦版 gmail、手機版 gmail app</li>
+        <li>依照使用者使用的裝置，呈現出對應的頁面</li>
+        <li>利用 HTML、CSS、JavaScript 實現 SPA</li>
       </ul>
     </div>
     <Modal
@@ -107,12 +100,20 @@ const GmailDemo = ({ visible, showModal, hideModal }) => (
     >
       <ul>
         <li>
-          <h4>一般會員登入</h4>
-          <img src="./image/pic_commet_home.png" alt="" />
+          <h4>電腦版首頁</h4>
+          <img src="./image/desktop_list.png" alt="" />
         </li>
         <li>
-          <h4>管理員登入</h4>
-          <img src="./image/pic_commet_admin.png" alt="" />
+          <h4>電腦版單一信件</h4>
+          <img src="./image/desktop_mail.png" alt="" />
+        </li>
+        <li>
+          <h4>手機版首頁</h4>
+          <img src="./image/mobile_list.png" alt="" />
+        </li>
+        <li>
+          <h4>手機版單一頁面</h4>
+          <img src="./image/mobile_mail.png" alt="" />
         </li>
       </ul>
     </Modal>
@@ -122,13 +123,13 @@ const GmailDemo = ({ visible, showModal, hideModal }) => (
 
 const Lazy = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
-    <h3 className="title">Lazy - Hackathon
+    <h3 className="title">網站優化專案： Lazy - Hackathon
       <a href="https://yakim-shu.github.io/lazy-hackathon-yakim/dist/" rel="noopener noreferrer" target="_blank">Demo</a>
       <a href="https://github.com/yakim-shu/lazy-hackathon-yakim" rel="noopener noreferrer" target="_blank">Github Repo</a>
       <a href="https://github.com/Lidemy/lazy-hackathon/issues/7" rel="noopener noreferrer" target="_blank">優化過程紀錄</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible3')}>
-      <p className="summary">此為跟導師 Huli 合作的專案，故意做一個速度很慢的網站，當作課程的作業之一，目的是讓學生藉由優化此網頁來學習網頁最佳化。同時也紀錄了詳細的<a href="https://github.com/Lidemy/lazy-hackathon/issues/7" rel="noopener noreferrer" target="_blank"> 優化過程 </a>。</p>
+      <p className="summary">此為一個練習網頁優化能力的網站，因為覺得優化網站很有趣，自己嘗試來挑戰看看網頁的最佳優化，同時也紀錄了詳細的<a href="https://github.com/Lidemy/lazy-hackathon/issues/7" rel="noopener noreferrer" target="_blank"> 優化過程 </a>。</p>
       <ul className="info">
         <h5>優化成果</h5>
         <li>原始數據：行動版： 9 分、電腦版： 52 分</li>
