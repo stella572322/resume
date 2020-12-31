@@ -4,18 +4,18 @@ const Work = () => (
   <section id="work" className="section work">
     <h4 className="section__title">WORK EXPERIENCE</h4>
     <div className="section__content work__item">
-      <a className="title" href="https://github.com/Lidemy/mentor-program-3rd" rel="noopener noreferrer">LIDEMY 第三期的程式導師計畫</a>
+      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">LIDEMY 第四期的程式導師計畫</a>
       <p className="summary">
         畢業生 <br />
-        Mar, 2019 – Oct, 2019<br />
-        參加由 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-3rd">【 程式導師計畫第三期 】</a>，過著與
-        <a href="https://github.com/Lidemy/homeworks-3rd/issues?utf8=✓&q=yakim" rel="noopener noreferrer" target="_blank"> 24 週作業 </a> 為伍的日子，期間加強了許多以往模糊不清的觀念，並在 Blog 持續發表技術筆記。
+        Jun, 2020 – Dec, 2020<br />
+        參加由 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 程式導師計畫第四期 】</a>，並記下半年以來以來自己的 <a href="https://mtr04-note.coderbridge.io/" rel="noopener noreferrer" target="_blank"> 程式學習紀錄</a>，期間加強了許多以往模糊不清的觀念，並在 Blog 持續紀錄學習軌跡。
       </p>
       <ul className="info">
         <li>前端框架 ： React ( with Redux )</li>
-        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS、PostCSS</li>
-        <li>後端技術 ： PHP 基本的 CRUD 操作、開發 RESTFul API</li>
-        <li>資安防範 ：了解如何預防 XSS、SQL Injection、CORS 的基本常識</li>
+        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS</li>
+        <li>後端技術 ： 搭配使用 Express 框架、PHP 基本的 CRUD 操作、開發 RESTFul API</li>
+        <li>資安防範 ： 了解如何預防 XSS、SQL Injection、CORS 的基本常識</li>
+        <li>基本部署 ： 具備部署 GitHub Page 及 AWS EC2 的經驗，並懂得如何應用 Nginx 作代理</li>
         <li>現代網頁工程及優化 ： Webpack 打包工具、 gulp 任務管理、網頁載入優化</li>
       </ul>
     </div>
