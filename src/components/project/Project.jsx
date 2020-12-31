@@ -78,23 +78,24 @@ const FINAL_PROJECT = ({ visible, showModal, hideModal }) => (
 
 const GmailDemo = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
-    <h3 className="title">網站復刻專案： Gmail - Demo
+    <h3 className="title">徵才形象網站專案： Gmail - Demo
       <a href="https://lidemy.github.io/jd-example/mail/desktop/index.html" rel="noopener noreferrer" target="_blank">Demo</a>
       <a href="https://github.com/Lidemy/gmail-demo" rel="noopener noreferrer" target="_blank">Github Repo</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible2')}>
-      <p className="summary">此為跟導師 Huli 合作的<a href="https://lidemy.github.io/jd-example/jd/" rel="noopener noreferrer" target="_blank">【 理想徵才文 】</a>專案，我負責的部分是利用 HTML 及 CSS 切出一個完整的 gmail 求職信。</p>
+      <p className="summary">與導師 Huli 合作的<a href="https://lidemy.github.io/jd-example/jd/" rel="noopener noreferrer" target="_blank">【 理想徵才文 】</a>
+      專案，本人負責以 gmail 為範本利用 HTML 及 CSS，臨摹出一個相同的 gmail 信箱。</p>
       <ul className="info print--hide">
         <h5>成果</h5>
-        <li>復刻電腦版 gmail、手機版 gmail app</li>
-        <li>依照使用者使用的裝置，呈現出對應的頁面</li>
-        <li>利用 HTML、CSS、JavaScript 實現 SPA</li>
+        <li>臨摹電腦版 gmail、手機版 gmail app</li>
+        <li>偵測使用者使用的裝置，呈現出對應的頁面</li>
+        <li>使用 HTML、CSS、JavaScript 實踐 SPA</li>
       </ul>
     </div>
     <Modal
       width="860px"
       footer={null}
-      title="Gmail - 求職信範例"
+      title="徵才形象網站專案： Gmail - Demo"
       visible={visible}
       onCancel={hideModal}
     >
