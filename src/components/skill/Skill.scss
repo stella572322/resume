@@ -1,3 +1,34 @@
+.title {
+  &::before {
+    @extend %weight-font-style;
+    @include pseudo(inline-block, '#');
+    @include position(relative, $top: -2px, $left: -5px);
+    color: $main-color;
+    font-size: 22px;
+  }
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 200px;
+
+  .skill__name {
+    font-size: 1.2em;
+  }
+  .skill__content {
+    padding: 8px 0 0 15px;
+    border-top: 0.5px solid $main-color;
+  }
+  li {
+    padding-left: 0px;
+    list-style: square;
+  }
+}
+
 .work {
   .info {
     list-style: initial;
