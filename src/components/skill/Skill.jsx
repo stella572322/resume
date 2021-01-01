@@ -40,7 +40,7 @@ const Skill = () => (
             <p><strong className="skill__name">PHP & MySQL</strong></p>
             <ul className="info skill__content">
               <li>使用 PDO 操作 MySQL</li>
-              <li>使用 session 及 password hash</li>
+              <li>了解 session / password hash 並實作</li>
               <li>了解 SQL injection / XSS / CSRF 並防範</li>
             </ul>
           </div>
