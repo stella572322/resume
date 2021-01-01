@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "build": "react-scripts build"
   },
-  "homepage": "https://krebikshaw.github.io/portfolio",
+  "homepage": "https://krebikshaw.github.io/portfolio/",
   "eslintConfig": {
     "extends": "react-app"
   },
