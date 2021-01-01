@@ -21,6 +21,7 @@
     "react-spinners": "^0.6.1",
     "react-syntax-highlighter": "^11.0.2"
   },
+  "homepage": "https://krebikshaw.github.io/portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -29,7 +30,6 @@
     "eject": "react-scripts eject",
     "build": "react-scripts build"
   },
-  "homepage": "https://krebikshaw.github.io/portfolio/",
   "eslintConfig": {
     "extends": "react-app"
   },
