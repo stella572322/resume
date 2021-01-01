@@ -10,15 +10,15 @@ const FINAL_PROJECT = ({ visible, showModal, hideModal }) => (
       <a href="https://mtr04-note.coderbridge.io/2020/12/28/final-project-record/" rel="noopener noreferrer" target="_blank">專案開發心得</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
-      <p className="summary">用 <code>React Hooks</code> 和 <code>Redux Toolkit</code> 打造的 SPA 二手商品交易平台，是由我進行領導與規劃，並找來 3 位同學一同合力開發。</p>
+      <p className="summary">此專案是利用 <code>React Hooks</code> 和 <code>Redux Toolkit</code> 打造的 SPA 二手商品交易平台，是由我進行領導與規劃，並找來 3 位同學一同合力開發。</p>
       <ul className="info print--hide">
         <h5>功能</h5>
         <li>商品系統 ： 自動篩選、手動搜尋、分類搜尋，並能決定排序方式</li>
         <li>購物車系統 ： 查看欲購買的項目及內容，並且成立訂單</li>
-        <li>賣家系統 ： 賣家後台刊登或編輯欲銷售的商品</li>
+        <li>賣家系統 ： 賣家後台、刊登或編輯欲銷售的商品</li>
         <li>個人資料管理系統 ： 編輯商店頁面的公告內容、聯絡資訊</li>
-        <li>訂單系統 ： 隨時掌握/更新訂單的最新狀態</li>
-        <li>後台管理系統 ： 審核最新刊登的商品，管理/維護網站的用戶及商品</li>
+        <li>訂單系統 ： 隨時掌握 / 更新訂單的最新狀態</li>
+        <li>後台管理系統 ： 審核最新刊登的商品，管理 / 維護網站的用戶及商品</li>
       </ul>
       <ul className="info">
         <h5>技術</h5>

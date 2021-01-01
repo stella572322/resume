@@ -16,7 +16,7 @@ const Work = () => (
       </p>
       <ul className="info">
         <li>前端框架 ： React ( with Redux )</li>
-        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS，知道 Ajax 以及如何與後端串接</li>
+        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS、知道 Ajax 以及如何與後端串接</li>
         <li>後端技術 ： 搭配使用 Express 框架、PHP 基本的 CRUD 操作、開發 RESTFul API</li>
         <li>資安防範 ： 了解如何預防 XSS、SQL Injection、CORS 的基本常識</li>
         <li>基本部署 ： 具備部署 GitHub Page 及 AWS EC2 的經驗，並懂得如何應用 Nginx 作代理</li>
@@ -33,11 +33,11 @@ const Work = () => (
         第一線協助「律師」與「司法院資訊處」處理系統方面問題，
         指導資訊部人員使用系統並協助工程師處理問題，
         在職期間不僅培養出對程式的興趣，也練就短時間理解客戶需求的軟實力，
-        並將客戶需求後與工程師進行溝通，間接推動系統的優化與修正。
+        並將客戶的需求與工程師進行溝通，間接推動系統的優化與修正。
       </p>
       <ul className="info">
         <li>查看 log :  初步分析程式 bug，回覆工程師處理</li>
-        <li>釐清資料問題 :  利用 sql 查詢資料庫，並確認資料內容並分析問題</li>
+        <li>釐清資料問題 :  利用 sql 查詢資料庫，確認資料內容並分析問題</li>
         <li>製作文件模板 :  利用「漢書文書處理系統」製作客戶所需之文件模板</li>
       </ul>
     </div>
