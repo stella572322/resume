@@ -6,7 +6,15 @@
   &.no-border {
     border: none;
   }
-  
+
+  &.no-margin {
+    margin: 0;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
   &__title {
     @extend %weight-font-style;
     font-size: 18px;
@@ -69,7 +77,6 @@
     }
   }
 }
-
 
 @include mq('tablet') {
   .section {

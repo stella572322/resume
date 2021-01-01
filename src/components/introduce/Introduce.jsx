@@ -2,7 +2,7 @@ import React from 'react';
 import ContactList from './../contactList/ContactList';
 
 const Introduce = () => (
-  <section className="section no-border">
+  <section className="section no-border no-margin">
     <h1 className="name-title">YUXIANG SU</h1>
     <section className="introduce">
       <p><strong>嗨！ 我是 裕翔，一個還在自我精進的 Front-End Developer 🎅</strong></p>

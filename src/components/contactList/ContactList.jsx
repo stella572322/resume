@@ -12,7 +12,7 @@ const ContactList = () => (
     </p>
     <p className="resume">
       <i className="far fa-file-alt fa-lg"></i>
-      <a href="./Yakim_Resume.pdf" download="Yakim_Resume">resume (pdf)</a>
+      <a href="./YuXiang_Profolio.pdf" download="YuXiang_Resume">resume (pdf)</a>
     </p>
   </div>
 );

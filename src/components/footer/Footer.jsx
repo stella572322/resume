@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <p className="copyright">© Copyright 2019, Yakim.</p>
+  <p className="copyright">Krebikshaw.</p>
 );
 
 export default Footer;

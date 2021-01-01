@@ -5,9 +5,9 @@ const About = () => (
     <h4 className="section__title">ABOUT ME</h4>
 
     <ul>
-      <li> 🎬： 所有公路片類型</li>
-      <li> 📖： 銀河便車指南、伊阪幸太郎全系列</li>
-      <li> 🏔️： 喜愛爬山但體力很差</li>
+      <li> 🏐： 喜愛打排球，大學習期參與過校隊活動</li>
+      <li> 🎬： 喜歡推理、謀略系列電影或連續劇</li>
+      <li> 🧩： 喜歡玩魔術方塊，解謎類遊戲</li>
     </ul>
   </section>
 );
