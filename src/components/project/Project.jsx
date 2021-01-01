@@ -27,7 +27,15 @@ const FINAL_PROJECT = ({ visible, showModal, hideModal }) => (
         <li>前端路由 ： <code>react-router-dom</code> </li>
         <li>狀態管理 ： <code>redux toolkit</code> </li>
         <li>簡易測試 ： <code>cypress</code> </li>
-        <li>後端以 <code>express</code> 部署到 AWS EC2、並使用 <code>Nginx</code> 作代理</li>
+        <li>後端以 <code>express</code> 部署到 <code>AWS EC2</code>、並使用 <code>Nginx</code> 作代理</li>
+      </ul>
+      <ul className="info print--hide">
+        <h5>工具</h5>
+        <li>會議討論 ： <code>Slack</code>、<code>Discord</code></li>
+        <li>會議紀綠 ： <code>HackMD</code></li>
+        <li>線搞繪製 ： <code>Adobe XD</code>、<code>Zeplin</code></li>
+        <li>資料庫規劃 ： <code>Dbdiagram</code></li>
+        <li>架構圖繪製 ： <code>Whimsical</code></li>
       </ul>
     </div>
     <Modal
@@ -183,8 +191,8 @@ class Project extends Component {
       <section id="project" className="section project">
         <h4 className="section__title">PROJECTS</h4>
         <FINAL_PROJECT visible={visible1} showModal={this.showModal} hideModal={this.hideModal} />
-        <Lazy visible={visible3} showModal={this.showModal} hideModal={this.hideModal} />
-        <GmailDemo visible={visible2} showModal={this.showModal} hideModal={this.hideModal} />
+        {/* <Lazy visible={visible3} showModal={this.showModal} hideModal={this.hideModal} />
+        <GmailDemo visible={visible2} showModal={this.showModal} hideModal={this.hideModal} /> */}
       </section>
     )
   }
