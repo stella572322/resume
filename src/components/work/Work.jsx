@@ -4,41 +4,80 @@ const Work = () => (
   <section id="work" className="section work">
     <h4 className="section__title">WORK EXPERIENCE</h4>
     <div className="section__content work__item">
-      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">LIDEMY 第四期的程式導師計畫</a>
+      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">2022 UXY 自學計畫</a>
       <p className="summary">
         畢業生 <br />
-        Jun, 2020 – Dec, 2020<br />
-        參加 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 程式導師計畫第四期 】</a>，
-        認識與理解許多程式相關的思考方式及觀念，
-        並在跟課的這半年期間持續利用 Blog 紀錄學習軌跡，
-        完成一路以來的 <a href="https://mtr04-note.coderbridge.io/" rel="noopener noreferrer" target="_blank"> 程式學習紀錄。</a>
-        
+        2022<br />
+        參加創辦人 Yvon 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 UXY 自學計畫 】</a>，
+        有系統化的了解 UX 設計的思考邏輯與設計流程，並與團隊其他設計師共同為銀色大門老人福利協會 Re-design 長輩送餐服務 APP 產品。
       </p>
       <ul className="info">
-        <li>前端框架 ： React ( with Redux )</li>
-        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS、知道 Ajax 以及如何與後端串接</li>
-        <li>後端技術 ： 搭配使用 Express 框架、PHP 基本的 CRUD 操作、開發 RESTFul API</li>
-        <li>資安防範 ： 了解如何預防 XSS、SQL Injection、CORS 的基本常識</li>
-        <li>基本部署 ： 具備部署 GitHub Page 及 AWS EC2 的經驗，並懂得如何應用 Nginx 作代理</li>
-        <li>現代網頁工程及優化 ： Webpack 打包工具、 gulp 任務管理、網頁載入優化</li>
+        <li>雙鑽石 UX 設計流程</li>
+        <li>探討 ： 具備次級研究與競爭者分析能力，掌握產品市場與定位。</li>
+        <li>定義問題 ： 使用問卷、訪談了解企業主與用戶的需求、摩擦點。</li>
+        <li>洞察 ： 熟悉親和圖、人物行為光譜分析方法，製作出人物誌及對應的顧客旅程地圖。</li>
+        <li>發想解決方案 ： 運用 HMW 發想、頭腦風暴 Crazy8 發想點子後，搭配四象限表進行分析。</li>
+        <li>開發 ： 使用 Figma 製作 Wireframes、Prototype 原型讓產品成為解決方案。</li>
+        <li>測試產品 ： 招募使用者來進行易用性測試，並搭配使用 Maze 軟體分析受測者測試結果，進一步做後續產品迭代。</li>
+      </ul>
+    </div>
+    <h4 className="section__title">WORK EXPERIENCE</h4>
+    <div className="section__content work__item">
+      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">LIDEMY 程式導師計畫</a>
+      <p className="summary">
+        自學生 <br />
+        2021<br />
+        自主學習 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 程式導師實驗計畫 】</a>，
+        認識與理解許多程式相關的思考方式及觀念。
+      </p>
+      <ul className="info">
+        <li>前端框架 ： React (略懂)</li>
+        <li>前端切版 ： 具備 HTML & CSS 、Flexbox 切版能力、了解應用 Bootstrap 套版</li>
+        <li>前端技術 ： 使用原生 JavaScript 語法特性、SCSS、知道 Ajax 以及如何與後端串接</li>
       </ul>
     </div>
 
     <div className="section__content work__item">
-      <h1 className="title" >正璽顧問有限公司</h1>
+      <h1 className="title" >恩納德生技有限公司</h1>
       <p className="summary">
-        宏碁輔導工程師<br />
-        Sep, 2019 – Feb, 2020<br />
-        負責「司法院 - 線上起訴暨律師單一登入」及「司法院 - 第二代審判系統」之系統維護專案。
-        第一線協助「律師」與「司法院資訊處」處理系統方面問題，
-        指導資訊部人員使用系統並協助工程師處理問題，
-        在職期間不僅培養出對程式的興趣，也練就短時間理解客戶需求的軟實力，
-        並將客戶的需求與工程師進行溝通，間接推動系統的優化與修正。
+        北區行政內勤 <br />
+        Mar, 2019 – Jun, 2020<br />
+        負責「製作醫院行政部 - 標案與合約報價」及「協助日常財務報表、會計、庫房、採購執行」。
+        第一線協助「醫院客戶」與「業務」處理產品、標案報價、發票方面問題，
+        指導醫院行政部人員使用系統並協助業務處理問題並設想解決方案，
+        在職期間不僅培養出對 UX 的興趣，也練就短時間理解客戶需求的軟實力，
       </p>
       <ul className="info">
-        <li>查看 log :  初步分析程式 bug，回覆工程師處理</li>
-        <li>釐清資料問題 :  利用 sql 查詢資料庫，確認資料內容並分析問題</li>
-        <li>製作文件模板 :  利用「漢書文書處理系統」製作客戶所需之文件模板</li>
+        <li>跨部門合作 :
+          <ul>
+            <li>1. 與業務部門溝通協作,使其了解醫院端需求,協助在標案和製作報價合約過程，滿足客戶需求。</li>
+            <li>2. 協助業務從導入產品認證服務系統，讓業務在醫院使用系統可以更快速完成產品審查作業。</li>
+            <li>3. 向其他經銷商或是其他分區內勤，溝通協調借調骨材或歸還器械。</li>
+            <li>4. Zimmer 原廠庫房聯絡窗口，溝通與執行瑕疵品/即期品退換事宜。</li>
+          </ul>  
+        </li>
+        <li>回饋流程規劃 :  與主管溝通分析行政流程痛點，從0到1協助，建置新產品服務流程,提升作業效率。</li>
+        <li>客戶痛點排除 :  整理出常遇到的關鍵困難或是常詢問事項,透過引導式問句，讓客戶有脈絡地描述當前的問題,進而建議最佳解決方案。</li>
+        <li>醫院報價單與標案製作 :  依據公司需求製作報價單給客戶、醫院標案文件資料準備。</li>
+        <li>財務報表製作與執行 :  負責 trauma 與骨泥產品線相關行政作業與財務報表製作。</li>
+        <li>會計庶務協助 :  核對系統與報表，開立相對應的紙本/電子發票。</li>
+        <li>貨品採購與盤點 :  使用 ERP 貨品進銷存管理盤點及定期採購骨材。</li>
+        <li>庫房出貨與清點 :  根據醫院需求準備對應的骨材與器具，以供業務駐點使用。</li>
+      </ul>
+    </div>
+
+    <div className="section__content work__item">
+      <h1 className="title" >CIEE 國際教育交流協會駐華辦事處</h1>
+      <p className="summary">
+        行政企劃員<br />
+        Jul, 2018 – Jun, 2019<br />
+        負責「各項活動企劃及相關行政作業」及「協助官網部落格與社群文案撰寫」
+        執行公司各項行銷宣傳影片製作與剪輯，在職期間獲得快速學習新事物的超能力，並且能因應不同的需求與主管進行溝通，產出符合公司需求的成果。
+      </p>
+      <ul className="info">
+        <li>活動企劃與執行 :  負責機構各項活動企劃及相關行政作業,包含計畫說明會講座、雇主見面活動。</li>
+        <li>社群小編 :  官網部落格文章製作與管理、Instagram、Facebook、部落格文章投放，社群文案撰寫。</li>
+        <li>行銷影片製作 :  公司活動宣傳影片製作與剪輯。</li>
       </ul>
     </div>
   </section>
