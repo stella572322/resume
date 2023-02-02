@@ -10,7 +10,7 @@ const DeliveryApp = ({ visible, showModal, hideModal }) => (
       <a href="https://mtr04-note.coderbridge.io/2020/12/28/final-project-record/" rel="noopener noreferrer" target="_blank">專案開發心得</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
-      <p className="summary">參與 UXY 自學計畫發起的與企業合作專案，協助社團法人銀色大門老人福利協會，優化並重新設計既有『長輩送餐服務 APP』。</p>
+      <p className="summary">參與 UXY 自學計畫為期 3 個月與企業合作專案，協助社團法人銀色大門老人福利協會，優化並重新設計既有『長輩送餐服務 APP』。</p>
       <ul className="info print--hide">
         <h5>專案介紹</h5>
         <li className='list__item'><strong>專案挑戰 ： </strong>因缺乏完善的整體規劃與直覺的操作介面，導致子女用戶無法透過 APP 順利訂餐</li>
@@ -88,7 +88,7 @@ const StudyApp = ({ visible, showModal, hideModal }) => (
       <a href="https://mtr04-note.coderbridge.io/2020/12/28/final-project-record/" rel="noopener noreferrer" target="_blank">專案開發心得</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
-      <p className="summary">此專案是由我自行發起，並與另一位 UIUX 設計師一同協作的專案。我們期望開發出一款如數位寶典般能夠解決個人學習問題的資源整合 APP。</p>
+      <p className="summary">此專案是由我自行發起，並與另一位 UIUX 設計師為期 2 個月的協作專案。我們期望開發出一款如數位寶典般能夠解決個人學習問題的資源整合 APP。</p>
       <ul className="info print--hide">
         <h5>專案介紹</h5>
         <li className='list__item'><strong>專案概要 ： </strong>HOUTEN 是一款可以查詢課程評價、找到志同道合的學習夥伴的 APP，另外在學習遇到困難時，也能夠向專業領域人士尋求幫助。</li>

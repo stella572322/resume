@@ -6,6 +6,11 @@
     
     li {
       line-height: 1.4rem;
+
+      .bold {
+        font-weight: bold;
+        color: #000;
+      }
     }
   }
 }

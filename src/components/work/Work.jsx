@@ -4,11 +4,11 @@ const Work = () => (
   <section id="work" className="section work">
     <h4 className="section__title">WORK EXPERIENCE</h4>
     <div className="section__content work__item">
-      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">2022 UXY 自學計畫</a>
+      <a className="title" href="https://www.uxy.design/courses/uxy" rel="noopener noreferrer" target="_blank">2022 UXY 自學計畫</a>
       <p className="summary">
         畢業生 <br />
-        2022<br />
-        參加創辦人 Yvon 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 UXY 自學計畫 】</a>，
+        Sep, 2022 – Nov, 2022 <br />
+        參加創辦人 Yvon 所開設的 <a href="https://www.uxy.design/courses/uxy" target="_blank">【 UXY 自學計畫 】</a>，
         有系統化的了解 UX 設計的思考邏輯與設計流程，並與團隊其他設計師共同為銀色大門老人福利協會 Re-design 長輩送餐服務 APP 產品。
       </p>
       <ul className="info">
@@ -21,19 +21,38 @@ const Work = () => (
         <li>測試產品 ： 招募使用者來進行易用性測試，並搭配使用 Maze 軟體分析受測者測試結果，進一步做後續產品迭代。</li>
       </ul>
     </div>
-    <h4 className="section__title">WORK EXPERIENCE</h4>
+    
     <div className="section__content work__item">
-      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">LIDEMY 程式導師計畫</a>
+      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">UI/UX 活動參與</a>
+      <ul className="info">
+        <li>
+          Sep, 2022 – Jan, 2022
+          <br/>
+          <strong> 國立台北商業大學 UX 三刀流共學活動 </strong>
+          <br/>
+          <p>參與為期 5 個月 UX 的線上直播工作訪共學討論課程，每週直播內容主要分為兩大部分，前半部為導師解說教材補充知識與案例分享，後半部為共同討論 Medium 文章留言，其他學員與導師會根據自身經驗分享對應的解決方案。</p>
+        </li>
+        <li>Nov, 2022 – Dec, 2022 <br/> 
+        <strong>獨角獸設計師養成計劃</strong>
+        <a className="bold" href="https://stella572322.github.io/resume/%E7%8D%A8%E8%A7%92%E7%8D%B8%E8%A8%88%E7%95%AB%E5%8F%83%E5%8A%A0%E8%AD%89%E6%9B%B8.pdf" target="_blank">【 參與證書 】</a>
+        <br/>
+        <p>與團隊共同構想設計提案，並參與聆聽 6 場設計講座。</p>
+        </li>
+      </ul>
+    </div>
+
+    <div className="section__content work__item">
+      <a className="title" href="https://bootcamp.lidemy.com/" rel="noopener noreferrer" target="_blank">LIDEMY 程式導師計畫</a>
       <p className="summary">
         自學生 <br />
-        2021<br />
-        自主學習 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 程式導師實驗計畫 】</a>，
+        Jun, 2020 – May, 2021<br />
+        自主學習 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://bootcamp.lidemy.com/" target="_blank">【 程式導師實驗計畫 】</a>，
         認識與理解許多程式相關的思考方式及觀念。
       </p>
       <ul className="info">
-        <li>前端框架 ： React (略懂)</li>
         <li>前端切版 ： 具備 HTML & CSS 、Flexbox 切版能力、了解應用 Bootstrap 套版</li>
         <li>前端技術 ： 使用原生 JavaScript 語法特性、SCSS、知道 Ajax 以及如何與後端串接</li>
+        <li>前端框架 ： React (略懂)</li>
       </ul>
     </div>
 
@@ -45,7 +64,7 @@ const Work = () => (
         負責「製作醫院行政部 - 標案與合約報價」及「協助日常財務報表、會計、庫房、採購執行」。
         第一線協助「醫院客戶」與「業務」處理產品、標案報價、發票方面問題，
         指導醫院行政部人員使用系統並協助業務處理問題並設想解決方案，
-        在職期間不僅培養出對 UX 的興趣，也練就短時間理解客戶需求的軟實力，
+        在職期間不僅培養出對 UX 的興趣，也練就短時間理解客戶需求的軟實力。
       </p>
       <ul className="info">
         <li>跨部門合作 :
