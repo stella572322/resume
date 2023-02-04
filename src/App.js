@@ -4,7 +4,6 @@ import Introduce from './components/introduce/Introduce';
 import Project from './components/project/Project';
 import Work from './components/work/Work';
 import Education from './components/education/Education';
-import Footer from './components/footer/Footer';
 import Anchor from './components/anchor/Anchor';
 import Contact from './components/contact/Contact';
 import About from './components/about/About';

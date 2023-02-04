@@ -5,9 +5,8 @@ import { Modal } from 'antd';
 const DeliveryApp = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
     <h3 className="title">銀色大門 - 長輩送餐服務 APP
-      <a href="https://give-plus-plus.tw" rel="noopener noreferrer" target="_blank">Demo</a>
-      <a href="https://github.com/krebikshaw/Give-plus-plus" rel="noopener noreferrer" target="_blank">Github Repo</a>
-      <a href="https://mtr04-note.coderbridge.io/2020/12/28/final-project-record/" rel="noopener noreferrer" target="_blank">專案開發心得</a>
+      <a href="https://stella572322.github.io/resume?type=silverGate" rel="noopener noreferrer" target="_blank">查看銀色大門專案</a>
+      <a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
       <p className="summary">參與 UXY 自學計畫為期 3 個月與企業合作專案，協助社團法人銀色大門老人福利協會，優化並重新設計既有『長輩送餐服務 APP』。</p>
@@ -42,40 +41,7 @@ const DeliveryApp = ({ visible, showModal, hideModal }) => (
       visible={visible}
       onCancel={hideModal}
     >
-      <ul>
-        <li>
-          <h4>首頁</h4>
-          <img src="./image/give-plus-plus.tw_home.png" alt="" />
-        </li>
-        <li>
-          <h4>賣家頁面</h4>
-          <img src="./image/give-plus-plus.tw_vendorshop.png" alt="" />
-        </li>
-        <li>
-          <h4>單一商品</h4>
-          <img src="./image/give-plus-plus.tw_singleproduct.png" alt="" />
-        </li>
-        <li>
-          <h4>個人資料</h4>
-          <img src="./image/give-plus-plus.tw_vendoinfo.png" alt="" />
-        </li>
-        <li>
-          <h4>購物車</h4>
-          <img src="./image/give-plus-plus.tw_cart.png" alt="" />
-        </li>
-        <li>
-          <h4>訂單明細</h4>
-          <img src="./image/give-plus-plus.tw_products_orders.png" alt="" />
-        </li>
-        <li>
-          <h4>登入頁面</h4>
-          <img src="./image/give-plus-plus.tw_login.png" alt="" />
-        </li>
-        <li>
-          <h4>註冊頁面</h4>
-          <img src="./image/give-plus-plus.tw_register.png" alt="" />
-        </li>
-      </ul>
+      <iframe title="prototype" style={{height: '100vh', width: '100%', border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2XWMJIb6C3fbtE84K772PC%2Fcase-study%3Fpage-id%3D0%253A1%26node-id%3D2%253A345%26viewport%3D455%252C742%252C0.02%26scaling%3Dscale-down-width" allowFullScreen></iframe>
     </Modal>
   </div>
 )
@@ -83,11 +49,10 @@ const DeliveryApp = ({ visible, showModal, hideModal }) => (
 const StudyApp = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
     <h3 className="title">HOUTEN  - 資源整合學習 APP
-      <a href="https://give-plus-plus.tw" rel="noopener noreferrer" target="_blank">Demo</a>
-      <a href="https://github.com/krebikshaw/Give-plus-plus" rel="noopener noreferrer" target="_blank">Github Repo</a>
-      <a href="https://mtr04-note.coderbridge.io/2020/12/28/final-project-record/" rel="noopener noreferrer" target="_blank">專案開發心得</a>
+      <a href="https://stella572322.github.io/resume?type=houten" rel="noopener noreferrer" target="_blank">查看 HOUTEN 專案</a>
+      <a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
     </h3>
-    <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
+    <div className="project__content" type="primary" onClick={() => showModal('visible2')}>
       <p className="summary">此專案是由我自行發起，並與另一位 UIUX 設計師為期 2 個月的協作專案。我們期望開發出一款如數位寶典般能夠解決個人學習問題的資源整合 APP。</p>
       <ul className="info print--hide">
         <h5>專案介紹</h5>
@@ -113,128 +78,14 @@ const StudyApp = ({ visible, showModal, hideModal }) => (
     <Modal
       width="860px"
       footer={null}
-      title="銀色大門 - 長輩送餐服務 APP"
+      title="HOUTEN  - 資源整合學習 APP"
       visible={visible}
       onCancel={hideModal}
     >
-      <ul>
-        <li>
-          <h4>首頁</h4>
-          <img src="./image/give-plus-plus.tw_home.png" alt="" />
-        </li>
-        <li>
-          <h4>賣家頁面</h4>
-          <img src="./image/give-plus-plus.tw_vendorshop.png" alt="" />
-        </li>
-        <li>
-          <h4>單一商品</h4>
-          <img src="./image/give-plus-plus.tw_singleproduct.png" alt="" />
-        </li>
-        <li>
-          <h4>個人資料</h4>
-          <img src="./image/give-plus-plus.tw_vendoinfo.png" alt="" />
-        </li>
-        <li>
-          <h4>購物車</h4>
-          <img src="./image/give-plus-plus.tw_cart.png" alt="" />
-        </li>
-        <li>
-          <h4>訂單明細</h4>
-          <img src="./image/give-plus-plus.tw_products_orders.png" alt="" />
-        </li>
-        <li>
-          <h4>登入頁面</h4>
-          <img src="./image/give-plus-plus.tw_login.png" alt="" />
-        </li>
-        <li>
-          <h4>註冊頁面</h4>
-          <img src="./image/give-plus-plus.tw_register.png" alt="" />
-        </li>
-      </ul>
-    </Modal>
-  </div>
-)
-
-
-const GmailDemo = ({ visible, showModal, hideModal }) => (
-  <div className="section__content">
-    <h3 className="title">徵才形象網站專案： Gmail - Demo
-      <a href="https://lidemy.github.io/jd-example/mail/desktop/index.html" rel="noopener noreferrer" target="_blank">Demo</a>
-      <a href="https://github.com/Lidemy/gmail-demo" rel="noopener noreferrer" target="_blank">Github Repo</a>
-    </h3>
-    <div className="project__content" type="primary" onClick={() => showModal('visible2')}>
-      <p className="summary">與導師 Huli 合作的<a href="https://lidemy.github.io/jd-example/jd/" rel="noopener noreferrer" target="_blank">【 理想徵才文 】</a>
-      專案，本人負責以 gmail 為範本利用 HTML 及 CSS，臨摹出一個相同的 gmail 信箱。</p>
-      <ul className="info print--hide">
-        <h5>成果</h5>
-        <li>臨摹電腦版 gmail、手機版 gmail app</li>
-        <li>偵測使用者使用的裝置，呈現出對應的頁面</li>
-        <li>使用 HTML、CSS、JavaScript 實踐 SPA</li>
-      </ul>
-    </div>
-    <Modal
-      width="860px"
-      footer={null}
-      title="徵才形象網站專案： Gmail - Demo"
-      visible={visible}
-      onCancel={hideModal}
-    >
-      <ul>
-        <li>
-          <h4>電腦版首頁</h4>
-          <img src="./image/desktop_list.png" alt="" />
-        </li>
-        <li>
-          <h4>電腦版單一信件</h4>
-          <img src="./image/desktop_mail.png" alt="" />
-        </li>
-        <li>
-          <h4>手機版首頁</h4>
-          <img src="./image/mobile_list.png" alt="" />
-        </li>
-        <li>
-          <h4>手機版單一頁面</h4>
-          <img src="./image/mobile_mail.png" alt="" />
-        </li>
-      </ul>
+     <iframe title="prototype" style={{height: '100vh', width: '100%', border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2XWMJIb6C3fbtE84K772PC%2Fcase-study%3Fpage-id%3D2%253A2185%26node-id%3D2%253A2456%26viewport%3D490%252C5840%252C0.13%26scaling%3Dscale-down-width" allowFullScreen></iframe>
     </Modal>
   </div>
 );
-
-
-const Lazy = ({ visible, showModal, hideModal }) => (
-  <div className="section__content">
-    <h3 className="title">網站優化專案： Lazy - Hackathon
-      <a href="https://yakim-shu.github.io/lazy-hackathon-yakim/dist/" rel="noopener noreferrer" target="_blank">Demo</a>
-      <a href="https://github.com/yakim-shu/lazy-hackathon-yakim" rel="noopener noreferrer" target="_blank">Github Repo</a>
-      <a href="https://github.com/Lidemy/lazy-hackathon/issues/7" rel="noopener noreferrer" target="_blank">優化過程紀錄</a>
-    </h3>
-    <div className="project__content" type="primary" onClick={() => showModal('visible3')}>
-      <p className="summary">此為一個練習網頁優化能力的網站，因為覺得優化網站很有趣，自己嘗試來挑戰看看網頁的最佳優化，同時也紀錄了詳細的<a href="https://github.com/Lidemy/lazy-hackathon/issues/7" rel="noopener noreferrer" target="_blank"> 優化過程 </a>。</p>
-      <ul className="info">
-        <h5>優化成果</h5>
-        <li>原始數據：行動版： 9 分、電腦版： 52 分</li>
-        <li>優化後結果：行動版： 97 分、電腦版： 100 分</li>
-      </ul>
-      <ul className="info">
-        <h5>優化技術 :  </h5>
-        <li>基本壓縮 : <code>HTML</code>、<code>JavaScript</code>、<code>CSS</code></li>
-        <li>CSS 優化 : <code>PostCSS</code>、<code>gulp-uncss</code></li>
-        <li>圖片優化 : <code>tinypng-compress</code>、<code>lazyload</code>、<code>webp</code>、<code>CSS Sprite</code></li>
-      </ul>
-    </div>
-    <Modal
-      width="860px"
-      footer={null}
-      title="Lazy - Hackathon"
-      visible={visible}
-      onCancel={hideModal}
-    >
-      <img src="./image/pic_lazy_01.png" alt="" />
-    </Modal>
-  </div>
-);
-
 
 class Project extends Component {
   state = {
@@ -263,9 +114,7 @@ class Project extends Component {
       <section id="project" className="section project">
         <h4 className="section__title">PROJECTS</h4>
         <DeliveryApp visible={visible1} showModal={this.showModal} hideModal={this.hideModal} />
-        <StudyApp visible={visible1} showModal={this.showModal} hideModal={this.hideModal} />
-        {/* <Lazy visible={visible3} showModal={this.showModal} hideModal={this.hideModal} />
-        <GmailDemo visible={visible2} showModal={this.showModal} hideModal={this.hideModal} /> */}
+        <StudyApp visible={visible2} showModal={this.showModal} hideModal={this.hideModal} />
       </section>
     )
   }

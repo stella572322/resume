@@ -12,8 +12,12 @@ const ContactList = () => (
     </p>
     <p className="resume">
       <i className="far fa-file-alt fa-lg"></i>
-      <a href="./YuXiang_Profolio.pdf" download="SsuChieh_Resume">resume (pdf)</a>
+      <a href="./SsuChieh_Resume.pdf" download="SsuChieh_Resume">resume (pdf)</a>
     </p>
+		<p>
+			<i className="fas fa-file-alt fa-lg"></i>
+			<a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
+		</p>
   </div>
 );
 
