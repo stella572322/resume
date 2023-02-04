@@ -5,7 +5,7 @@ import { Modal } from 'antd';
 const DeliveryApp = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
     <h3 className="title">銀色大門 - 長輩送餐服務 APP
-      <a href="https://stella572322.github.io/resume?type=silverGate" rel="noopener noreferrer" target="_blank">查看銀色大門專案</a>
+      <a href="https://stella572322.github.io/resume/#/prototype?type=silverGate" rel="noopener noreferrer" target="_blank">查看銀色大門專案</a>
       <a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible1')}>
@@ -49,7 +49,7 @@ const DeliveryApp = ({ visible, showModal, hideModal }) => (
 const StudyApp = ({ visible, showModal, hideModal }) => (
   <div className="section__content">
     <h3 className="title">HOUTEN  - 資源整合學習 APP
-      <a href="https://stella572322.github.io/resume?type=houten" rel="noopener noreferrer" target="_blank">查看 HOUTEN 專案</a>
+      <a href="https://stella572322.github.io/resume/#/prototype?type=houten" rel="noopener noreferrer" target="_blank">查看 HOUTEN 專案</a>
       <a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
     </h3>
     <div className="project__content" type="primary" onClick={() => showModal('visible2')}>
