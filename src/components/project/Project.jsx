@@ -12,11 +12,11 @@ const DeliveryApp = ({ visible, showModal, hideModal }) => (
       <p className="summary">參與 UXY 自學計畫為期 3 個月與企業合作專案，協助社團法人銀色大門老人福利協會，優化並重新設計既有『長輩送餐服務 APP』。</p>
       <ul className="info print--hide">
         <h5>專案介紹</h5>
-        <li className='list__item'><strong>專案挑戰 ： </strong>因缺乏完善的整體規劃與直覺的操作介面，導致子女用戶無法透過 APP 順利訂餐</li>
+        <li className='list__item'><strong>專案挑戰 ： </strong>因缺乏完善的整體規劃與直覺的操作介面，導致子女用戶無法透過 APP 順利訂餐。</li>
         <li className='list__item'><strong>Re-design 目標 ： </strong>提升產品整體的溫度與互動性，讓既有的客戶使用 APP 服務訂餐意願提高，並降低真人客服溝通服務成本。</li>
-        <li className='list__item'><strong>設計理念 ： </strong>保有原有簡約配色再搭配插畫風格 ,讓使用 APP 的用戶能在訂餐的過程中感受到溫暖與用心。</li>
-        <li className='list__item'><strong>設計流程 ： </strong>與企業主與使用者進行訪談，深入了解問題後制定出解決方案，藉由 Figma 設計介面與原型,並透過易用性測試與業師回饋後，再進行一次迭代設計。</li>
-        <li className='list__item'><strong>功能介紹 ： </strong>以子女用戶族群為目標對象,以凸顯訂餐功能為主要功能;另亦重新設計建立長輩資料頁面、自選送餐時間頁面，額外新增系統推薦、查看訂單與評分功能 等,以符合用戶的訂餐需求。</li>
+        <li className='list__item'><strong>設計理念 ： </strong>保有原有簡約配色再搭配插畫風格 ，讓使用 APP 的用戶能在訂餐的過程中感受到溫暖與用心。</li>
+        <li className='list__item'><strong>設計流程 ： </strong>與企業主與使用者進行訪談，深入了解問題後制定出解決方案，藉由 Figma 設計介面與原型，並透過易用性測試與業師回饋後，再進行一次迭代設計。</li>
+        <li className='list__item'><strong>功能介紹 ： </strong>以子女用戶族群為目標對象，以凸顯訂餐功能為主要功能;另亦重新設計建立長輩資料頁面、自選送餐時間頁面，額外新增系統推薦、查看訂單與評分功能 等，以符合用戶的訂餐需求。</li>
       </ul>
       <ul className="info">
         <h5>技術</h5>
@@ -59,7 +59,7 @@ const StudyApp = ({ visible, showModal, hideModal }) => (
         <li className='list__item'><strong>專案概要 ： </strong>HOUTEN 是一款可以查詢課程評價、找到志同道合的學習夥伴的 APP，另外在學習遇到困難時，也能夠向專業領域人士尋求幫助。</li>
         <li className='list__item'><strong>動機發想 ： </strong>有鑒於科技化與疫情影響，目前線上學習資源平台的市場需求日漸擴大，大家越來越習慣於利用網際網路學習新的知識，所以希望以此為題，探討使用者的學習脈絡。</li>
         <li className='list__item'><strong>設計流程 ： </strong>利用發放問卷、使用者訪談，了解使用者在搜尋學習資源相關痛點與未來設計機會點，藉由 Figma 設計介面與原型。</li>
-        <li className='list__item'><strong>功能介紹 ： </strong>以學生族群為目標對象,開發了一款能查詢課程評價並且找尋學習夥伴為主要功能的 APP，另亦整合學習資源,包括問題發問、交友聊天 等,以符合學生族群的學習需求。</li>
+        <li className='list__item'><strong>功能介紹 ： </strong>以學生族群為目標對象，開發了一款能查詢課程評價並且找尋學習夥伴為主要功能的 APP，另亦整合學習資源，包括問題發問、交友聊天 等，以符合學生族群的學習需求。</li>
       </ul>
       <ul className="info">
         <h5>技術</h5>
