@@ -12,7 +12,7 @@ const ContactList = () => (
     </p>
     <p className="resume">
       <i className="far fa-file-alt fa-lg"></i>
-      <a href="./SsuChieh_Resume.pdf" download="SsuChieh_Resume">resume (pdf)</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://stella572322.github.io/resume/SsuChiehChen_Resume.pdf" download="SsuChieh_Resume">resume (pdf)</a>
     </p>
 		<p>
 			<i className="fas fa-file-alt fa-lg"></i>
