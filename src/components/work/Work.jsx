@@ -26,7 +26,7 @@ const Work = () => (
       <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">UI/UX 活動參與</a>
       <ul className="info">
         <li>
-          Sep, 2022 – Jan, 2022
+          Sep, 2022 – Jan, 2023
           <br/>
           <strong> 國立台北商業大學 UX 三刀流共學活動 </strong>
           <br/>
