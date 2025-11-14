@@ -3,6 +3,23 @@ import React from 'react';
 const Work = () => (
   <section id="work" className="section work">
     <h4 className="section__title">WORK EXPERIENCE</h4>
+		<div className="section__content work__item">
+      <a className="title" href="https://www.uxy.design/courses/uxy" rel="noopener noreferrer" target="_blank">日陞空間資訊股份有限公司</a>
+      <p className="summary">
+        UI/UX Designer <br />
+        Mar, 2023 – Now <br />
+        負責公司 Web 與 App 產品的介面設計、撰寫分析文件與跨部門協作。
+      </p>
+      <ul className="info">
+        <li>與 PM、工程師、分析師等團隊協作，釐清需求並拆解功能。</li>
+        <li>進行可用性測試，整理洞察並提出改善策略。</li>
+        <li>設計 User Flow、Wireframe、資訊架構，並負責視覺設計落地。</li>
+        <li>協助跨團隊對齊專案目標、追蹤開發進度、解決協作中的阻礙。</li>
+        <li>根據產品客戶系統使用回饋，提出優化方案。</li>
+        <li>使用 Figma 製作 Wireframe、Prototype 原型讓產品成為解決方案。</li>
+      </ul>
+    </div>
+
     <div className="section__content work__item">
       <a className="title" href="https://www.uxy.design/courses/uxy" rel="noopener noreferrer" target="_blank">2022 UXY 自學計畫</a>
       <p className="summary">

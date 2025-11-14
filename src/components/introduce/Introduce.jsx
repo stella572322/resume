@@ -9,7 +9,6 @@ const Introduce = () => (
       <p>
         Taipei <br />
         在 UI/UX 的世界中持續尋寶，透過規劃構思出藍圖，並藉由設計去建築自己的想法。<br />
-        參與 2022 UXY 自學計畫，從中獲取開啟 UI/UX 大門的鑰匙
         </p>
     </section>
     <ContactList />
