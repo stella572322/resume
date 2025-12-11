@@ -1,48 +1,388 @@
 .theme--dark {
-  p {
-    strong {
-      color: #fff;
-    }
-  
-    a {
-      color: #ccc;
-    }
+  /* Resume Container */
+  .resume-container {
+    background: #2a2a2a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
+  /* Header */
+  .resume-header {
+    background: linear-gradient(135deg, darken($main-color, 20%) 0%, #2a2a2a 100%);
 
-  .contact-info p {
-    i {
-      color: #fff;
+    &__name {
+      color: lighten($main-color, 20%);
     }
-  }
-  
-  .section__content {
-    .title {
-      color: #fff;
-    }
-  
-    .info {
-      li {
-        color: #999;
-      }
-    }
-  }
 
-  .ant-anchor-wrapper {
-    background: none;
-    transition: none;
-    .ant-anchor-ink-ball {
-      background: #333;
+    &__title {
+      color: #eee;
     }
-  
-    .ant-anchor-link-title {
+
+    &__subtitle {
       color: #aaa;
-  
-      &.ant-anchor-link-title-active {
-        color: #fff;
+    }
+
+    &__summary {
+      background: rgba(0, 0, 0, 0.22);
+      border-color: rgba(lighten($main-color, 10%), 0.25);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    &__summaryTitle {
+      color: lighten($main-color, 18%);
+    }
+  }
+
+  /* Contact Info */
+  .contact-item {
+    color: #bbb;
+
+    i {
+      color: lighten($main-color, 15%);
+    }
+
+    a {
+      color: #bbb;
+
+      &:hover {
+        color: lighten($main-color, 20%);
       }
+    }
+  }
+
+  /* Sidebar */
+  .resume-sidebar {
+    background: #333;
+    border-right-color: #444;
+  }
+
+  .sidebar-section__title {
+    color: lighten($main-color, 15%);
+  }
+
+  .sidebar-section__decorator {
+    color: lighten($main-color, 15%);
+  }
+
+  /* Target List */
+  .target-list li {
+    color: #aaa;
+    border-bottom-color: #444;
+  }
+
+  .profile-item {
+    &__name {
+      color: #eee;
+    }
+
+    &__label {
+      color: #888;
+    }
+
+    i {
+      color: lighten($main-color, 15%);
+    }
+  }
+
+  .skill-item {
+    &__title {
+      color: #eee;
+    }
+
+    &__level {
+      color: #888;
+    }
+
+    &__list {
+      color: #aaa;
+    }
+  }
+
+  /* Competency Items */
+  .competency-item {
+    &__title {
+      color: #eee;
+    }
+
+    &__desc {
+      color: #aaa;
+    }
+  }
+
+  /* Sidebar Competencies */
+  .sidebar-competency {
+    border-bottom-color: #444;
+
+    &__header i {
+      color: lighten($main-color, 15%);
+    }
+
+    &__title {
+      color: #eee;
+    }
+
+    &__subtitle {
+      color: #888;
+    }
+
+    &__desc {
+      color: #aaa;
+
+      strong {
+        color: lighten($main-color, 20%);
+      }
+    }
+  }
+
+  /* Endorsement */
+  .endorsement {
+    background: rgba(lighten($main-color, 10%), 0.1);
+    border-left-color: lighten($main-color, 10%);
+
+    p {
+      color: #bbb;
+    }
+
+    cite {
+      color: lighten($main-color, 20%);
+    }
+  }
+
+  .cert-item {
+    &__title {
+      color: #eee;
+    }
+
+    &__org {
+      color: #aaa;
+    }
+
+    &__year {
+      color: lighten($main-color, 15%);
+    }
+  }
+
+  .project-item {
+    &__title {
+      color: #eee;
+    }
+
+    &__role {
+      color: #aaa;
+    }
+
+    &__desc {
+      color: #999;
+    }
+  }
+
+  /* Main Content */
+  .resume-main {
+    background: #2a2a2a;
+  }
+
+  /* Highlights */
+  .highlights-block {
+    background: #303030;
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      background: linear-gradient(
+        180deg,
+        lighten($main-color, 18%) 0%,
+        rgba(lighten($main-color, 18%), 0.35) 100%
+      );
+    }
+
+    &::after {
+      background: radial-gradient(
+        circle,
+        rgba(lighten($main-color, 12%), 0.16) 0%,
+        rgba(lighten($main-color, 12%), 0) 70%
+      );
+    }
+  }
+
+  .highlights-list__item {
+    color: #bbb;
+
+    &::before {
+      color: lighten($main-color, 15%);
+    }
+
+    strong {
+      color: #eee;
+    }
+  }
+
+  .highlights-list__desc {
+    color: #aaa;
+  }
+
+  .main-section__title {
+    color: lighten($main-color, 15%);
+  }
+
+  /* Summary */
+  .summary-content {
+    color: #bbb;
+
+    strong {
+      color: lighten($main-color, 15%);
+    }
+  }
+
+  /* Experience */
+  .experience-item {
+    &::before {
+      background: darken($main-color, 10%);
+    }
+
+    &__marker {
+      background: lighten($main-color, 10%);
+      border-color: darken($main-color, 10%);
+    }
+
+    &__company {
+      color: #eee;
+    }
+
+    &__role {
+      color: #aaa;
+    }
+
+    &__location {
+      color: #888;
+    }
+
+    &__date {
+      color: lighten($main-color, 15%);
+    }
+
+    &__note {
+      background: rgba(lighten($main-color, 10%), 0.1);
+      border-left-color: lighten($main-color, 10%);
+      color: #bbb;
+    }
+
+    &__list li {
+      color: #bbb;
+
+      strong {
+        color: #eee;
+      }
+    }
+
+    &__link {
+      color: lighten($main-color, 15%);
+    }
+  }
+
+  /* Education */
+  .education-item {
+    &__marker {
+      background: lighten($main-color, 10%);
+      border-color: darken($main-color, 10%);
+    }
+
+    &__school {
+      color: #eee;
+    }
+
+    &__location {
+      color: #888;
+    }
+
+    &__degree {
+      color: #aaa;
+    }
+
+    &__date {
+      color: lighten($main-color, 15%);
+    }
+  }
+
+  /* Contributions */
+  .contribution-group {
+    &__title {
+      color: #eee;
+      border-bottom-color: #444;
+
+      i {
+        color: lighten($main-color, 15%);
+      }
+    }
+  }
+
+  .contribution-item {
+    &__icon {
+      background: rgba(lighten($main-color, 10%), 0.15);
+
+      i {
+        color: lighten($main-color, 20%);
+      }
+    }
+
+    &__title {
+      color: #eee;
+    }
+
+
+    &__badge {
+      background: lighten($main-color, 5%);
+    }
+
+    &__desc {
+      color: #aaa;
+
+      strong {
+        color: lighten($main-color, 20%);
+      }
+    }
+  }
+
+  /* Main Content - Competencies Cards */
+  .competencies-grid {
+    .competency-card {
+      background: #333;
+      border-color: #444;
+
+      &:hover {
+        border-color: lighten($main-color, 10%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      &__icon {
+        color: lighten($main-color, 15%);
+      }
+
+      &__title {
+        color: #eee;
+      }
+
+      &__subtitle {
+        color: #888;
+      }
+
+      &__desc {
+        color: #aaa;
+      }
+    }
+  }
+
+  /* Knowledge Sharing in Sidebar */
+  .sharing-item {
+    i {
+      color: lighten($main-color, 15%);
+    }
+
+    &__title {
+      color: #eee;
+    }
+
+    &__desc {
+      color: #999;
     }
   }
 }
-
 

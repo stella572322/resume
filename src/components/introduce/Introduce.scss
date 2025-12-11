@@ -1,51 +1,116 @@
-.name-title {
-  @extend %weight-font-style;
-  color: $main-color;
-  font-size: 28px;
-  margin-bottom: 2rem;
-}
+/* Resume Header - Top Section */
+.resume-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 35px;
+  background: linear-gradient(135deg, #695aa6b5 0%, #fff 100%);
+  border-bottom: 3px solid $main-color;
 
-.introduce {
-  border: 2px solid $main-color;
-  padding: 20px;
-  font-size: 15px;
-  @include position(relative);
+  &__avatar {
+    flex-shrink: 0;
+    margin-right: 30px;
 
-  p {
-    line-height: 1.8rem;
+    img {
+      @include size(120px);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
   }
 
-  &::before {
+  &__info {
+    flex: 1;
+  }
+
+  &__name {
     @extend %weight-font-style;
-    @include pseudo(flex, '');
-    @include size(120px);
-    border-radius: 50%;
-    @include position(absolute, $top: 15px, $left: -140px);
-    background: url('https://github.com/stella572322/resume/blob/master/public/image/avatar.jpg?raw=true')
-      center/cover no-repeat;
-    font-size: 24px;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
+    color: $main-color;
+    font-size: 28px;
+    margin-bottom: 5px;
+    letter-spacing: 0.1rem;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.05rem;
+  }
+
+  &__subtitle {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  &__summary {
+    margin-top: 14px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba($main-color, 0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(6px);
+    max-width: 720px;
+  }
+
+  &__summaryTitle {
+    @extend %weight-font-style;
+    margin: 0 0 10px;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    color: darken($main-color, 8%);
   }
 }
 
 /* ----- RWD ---- */
-@include mq('desktop') {
-  .introduce {
-    &::before {
-      top: -45px;
-      left: auto;
-      right: -15px;
-      @include size(80px);
+@include mq('tablet') {
+  .resume-header {
+    padding: 25px 20px;
+
+    &__avatar {
+      margin-right: 20px;
+
+      img {
+        @include size(100px);
+      }
+    }
+
+    &__name {
+      font-size: 26px;
+    }
+
+    &__summary {
+      max-width: 100%;
     }
   }
 }
 
 @include mq('phone-l') {
-  .introduce {
-    &::before {
-      display: none;
+  .resume-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+
+    &__avatar {
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      img {
+        @include size(100px);
+      }
+    }
+
+    &__name {
+      font-size: 24px;
+    }
+
+    &__summary {
+      text-align: left;
+      width: 100%;
     }
   }
 }

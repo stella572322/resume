@@ -1,56 +1,244 @@
-@media print{
-  body {
-    -webkit-print-color-adjust: exact;
+@media print {
+  /* 基礎設定 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
+
+  @page {
+    size: A4;
+    /* Avoid printer non-printable area clipping */
+    margin: 6mm;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff !important;
+  }
+
+  /* 隱藏不需要的元素 */
   .ant-switch {
-    display: none;
+    display: none !important;
   }
 
-  body {
-    padding:0;
+  .print--hide {
+    display: none !important;
   }
+
+  /* 主容器 */
   .wrapper {
-    padding:0;
+    padding: 0;
+    min-height: auto;
+    overflow: visible !important;
   }
 
-  .section {
-    margin-bottom: 0rem;
-    padding-bottom: 0rem;
+  .resume-header {
+    padding: 16px 16px;
+
+    &__avatar {
+      margin-right: 14px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__name {
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
 
     &__title {
-      margin-bottom: 1rem;
+      font-size: 12px;
+      margin-bottom: 4px;
     }
-    
-    .section__content {
-      margin-bottom: 1rem;
 
-      .summary {
-        margin-bottom: 0.5rem;
+    &__subtitle {
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+
+    &__summary {
+      margin-top: 10px;
+      padding: 10px 12px;
+      box-shadow: none;
+    }
+
+    &__summaryTitle {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .resume-main {
+    padding: 14px 16px;
+  }
+
+  .main-section {
+    margin-bottom: 14px;
+
+    &__title {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .highlights-row {
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .highlights-block {
+    padding: 10px 12px;
+    background: #fff !important;
+    border-color: #d9d9d9 !important;
+    border-left: 3px solid #666 !important;
+    box-shadow: none !important;
+
+    &::after {
+      display: none !important;
+    }
+
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .highlights-list__item {
+    color: #333 !important;
+    border-bottom-color: #d0d0d0 !important;
+
+    &::before {
+      color: #444 !important;
+    }
+
+    strong {
+      color: #111 !important;
+    }
+  }
+
+  .highlights-list__desc {
+    color: #444 !important;
+  }
+
+  /* If user prints while dark theme is enabled, force readable print colors */
+  .theme--dark {
+    .main-section__title {
+      color: #111 !important;
+    }
+
+    .highlights-list__item {
+      color: #333 !important;
+
+      strong {
+        color: #111 !important;
       }
     }
 
-    .info {
-      h5 {
-        display: none;
-      }
+    .highlights-list__desc {
+      color: #444 !important;
     }
   }
 
-  #contact {
-    display: none;
-  }
-  .print--hide {
-    display: none;
-  }
+  .highlights-list__item {
+    font-size: 10.5px;
+    margin-bottom: 4px;
+    line-height: 1.45;
+    padding-left: 12px;
+    padding-bottom: 4px;
 
-  .copyright {
-    margin-top: 20px;
-  }
-
-  .contact-info {
-    .resume {
-      display: none;
+    &::before {
+      top: 0.02em;
     }
   }
 
+  .experience-item {
+    margin-bottom: 12px;
+    padding-left: 18px;
+
+    &__company {
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+
+    &__meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+
+    &__role {
+      font-size: 11px;
+      margin: 0;
+    }
+
+    &__date {
+      font-size: 10.5px;
+      margin: 0;
+    }
+
+    &__note {
+      font-size: 10.5px;
+      padding: 6px 10px;
+      margin-bottom: 8px;
+    }
+
+    &__list li {
+      font-size: 10.5px;
+      margin-bottom: 5px;
+      line-height: 1.45;
+    }
+
+    &__projectTitle {
+      font-size: 11px;
+      margin: 2px 0 4px;
+    }
+
+    &__projectBullets li {
+      margin-bottom: 4px;
+    }
+  }
+
+  .resume-container {
+    max-width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    /* IMPORTANT: prevent content from being clipped at page breaks */
+    overflow: visible !important;
+  }
+
+  .resume-body,
+  .resume-sidebar,
+  .resume-main {
+    overflow: visible !important;
+  }
+
+  /* Print fragmentation helpers */
+  p, li, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* 避免分頁 */
+  .resume-header,
+  .sidebar-section,
+  .main-section,
+  .experience-item,
+  .education-item {
+    page-break-inside: auto;
+  }
+
+  /* Allow long bullets/notes to break naturally instead of being clipped */
+  .experience-item__note,
+  .experience-item__list,
+  .experience-item__list li {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
 }

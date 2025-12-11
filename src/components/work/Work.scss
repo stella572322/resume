@@ -1,16 +1,219 @@
-.work {
-  .info {
-    @include position(relative, $left: 20px);
-    padding-right: 20px;
-    list-style: initial;
-    
-    li {
-      line-height: 1.4rem;
+/* Main Section Styles */
+.main-section {
+  margin-bottom: 30px;
 
-      .bold {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @extend %weight-font-style;
+    color: $main-color;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* Experience Item with Timeline */
+.experience-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* Timeline line */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    width: 2px;
+    height: calc(100% + 25px);
+    background: lighten($main-color, 30%);
+  }
+
+  /* Timeline marker */
+  &__marker {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $main-color;
+    border: 3px solid lighten($main-color, 40%);
+  }
+
+  &__content {
+    padding-left: 10px;
+  }
+
+  &__company {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  &__role {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  &__location {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  &__date {
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  &__note {
+    background: rgba($main-color, 0.08);
+    border-left: 3px solid $main-color;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+
+    span[role="img"] {
+      margin-right: 5px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+
+    li {
+      color: #555;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+      padding-left: 15px;
+      position: relative;
+
+      &::before {
+        content: '•';
+        color: $main-color;
+        position: absolute;
+        left: 0;
         font-weight: bold;
-        color: #000;
       }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      strong {
+        color: #333;
+      }
+    }
+  }
+
+  &__projectList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  &__project {
+    padding-left: 0;
+    margin-bottom: 10px;
+
+    &::before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__projectTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 2px 0 6px;
+  }
+
+  &__projectBullets {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 6px;
+
+      &::before {
+        content: '○';
+        color: $main-color;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: $main-color;
+    font-size: 12px;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+/* ----- RWD ---- */
+@include mq('phone-l') {
+  .experience-item {
+    padding-left: 20px;
+
+    &__company {
+      font-size: 14px;
+    }
+
+    &__list li {
+      font-size: 12px;
     }
   }
 }

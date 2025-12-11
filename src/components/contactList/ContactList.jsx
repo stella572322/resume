@@ -1,24 +1,41 @@
 import React from 'react';
+import { useI18n } from '../../i18n';
+import { RESUME_DOWNLOADS } from '../../config/resumeDownloads';
 
-const ContactList = () => (
-  <div className="contact-info">
-    <p>
-      <i className="fas fa-paper-plane fa-lg"></i>
-      <a href="mailto:yuxiangsu0220@gmail.com" target="_blank" rel="noopener noreferrer">yuxiangsu0220@gmail.com</a>
-    </p>
-    <p>
-      <i className="fas fa-phone-alt fa-lg"></i>
-      <a href="tel:+996-911-277-811">+886 980 517 778</a>
-    </p>
-    <p className="resume">
-      <i className="far fa-file-alt fa-lg"></i>
-      <a target="_blank" rel="noopener noreferrer" href="https://stella572322.github.io/resume/SsuChiehChen_Resume.pdf" download="SsuChieh_Resume">resume (pdf)</a>
-    </p>
-		<p>
-			<i className="fas fa-file-alt fa-lg"></i>
-			<a href="https://stella572322.github.io/portfolio/" rel="noopener noreferrer" target="_blank">作品集網站</a>
-		</p>
-  </div>
-);
+const ContactList = () => {
+  const { lang, t } = useI18n();
+  const resumeDownload = RESUME_DOWNLOADS[lang] || RESUME_DOWNLOADS.en;
+  const resumeUrl = resumeDownload && resumeDownload.url;
+
+  return (
+    <div className="contact-info">
+      <span className="contact-item">
+        <i className="fas fa-map-marker-alt"></i>
+        Taipei, Taiwan
+      </span>
+      <span className="contact-item">
+        <i className="fas fa-phone-alt"></i>
+        <a href="tel:+886-980-517-778">+886 980 517 778</a>
+      </span>
+      <span className="contact-item">
+        <i className="fas fa-envelope"></i>
+        <a href="mailto:yuxiangsu0220@gmail.com">yuxiangsu0220@gmail.com</a>
+      </span>
+      {resumeUrl ? (
+        <span className="contact-item">
+          <i className="fas fa-file-download"></i>
+          <a href={resumeUrl} download={resumeDownload.filename} target="_blank" rel="noopener noreferrer">
+            {t('resume.download')}
+          </a>
+        </span>
+      ) : (
+        <span className="contact-item contact-item--disabled">
+          <i className="fas fa-file-download"></i>
+          {t('resume.download')}
+        </span>
+      )}
+    </div>
+  );
+};
 
 export default ContactList;

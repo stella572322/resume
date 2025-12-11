@@ -1,38 +1,50 @@
 .contact-info {
   display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 12px;
+}
 
-  p {
-    margin-right: 20px;
-    
-    i {
-      color: #000;
-      margin-right: 10px;
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  color: #666;
+
+  i {
+    color: $main-color;
+    margin-right: 6px;
+    font-size: 12px;
+  }
+
+  a {
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+      color: $main-color;
     }
   }
+}
+
+.contact-item--disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
 }
 
 /* ----- RWD ---- */
 @include mq('tablet') {
   .contact-info {
-    flex-wrap: wrap;
-
-    p {
-      flex-basis: 50%;
-      margin-right: 0;
-    }
+    gap: 6px 15px;
   }
 }
 
 @include mq('phone-l') {
   .contact-info {
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
 
-    p {
-      flex-basis: 100%;
-      text-align: center;
-    }
+  .contact-item {
+    font-size: 11px;
   }
 }

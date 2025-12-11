@@ -1,36 +1,23 @@
-.about {
-  line-height: 1.8rem;
-  letter-spacing: 0.05rem;
-  animation: fadeIn 1s;
-  color: #666;
+/* Summary Section */
+.summary-section {
+  margin-bottom: 25px;
+}
 
-  a {
-    border-bottom: 2px solid $main-color;
-  }
-
-  span {
-    background: #666;
-    padding: 0px 5px;
-    color: #fff;
-    font-size: 14px;
-  }
+.summary-content {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.8;
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 12px;
 
-    
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  ul {
-    list-style: initial;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
+  strong {
+    color: $main-color;
+    font-weight: 600;
   }
-
-  blockquote {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding: 1.5rem;
-  }
-
 }

@@ -1,0 +1,102 @@
+.highlights-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+
+  .highlights {
+    margin-bottom: 0;
+  }
+}
+
+.highlights-block {
+  position: relative;
+  background: #f8f9fa;
+  border: 1px solid rgba($main-color, 0.14);
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(
+      180deg,
+      rgba($main-color, 0.95) 0%,
+      rgba($main-color, 0.45) 100%
+    );
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -42px;
+    top: -42px;
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(
+      circle,
+      rgba($main-color, 0.14) 0%,
+      rgba($main-color, 0) 70%
+    );
+    transform: rotate(10deg);
+    pointer-events: none;
+  }
+
+  .main-section__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+.highlights-list {
+  margin: 0;
+  padding: 0;
+}
+
+.highlights-list__item {
+  position: relative;
+  padding-left: 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #555;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgba($main-color, 0.16);
+
+  &::before {
+    content: '○';
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    color: $main-color;
+    font-weight: bold;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  strong {
+    color: #333;
+  }
+}
+
+.highlights-list__desc {
+  color: #666;
+}
+
+/* ----- RWD ---- */
+@include mq('tablet') {
+  .highlights-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}

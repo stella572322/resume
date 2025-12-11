@@ -1,35 +1,65 @@
 body {
-  
+  background-color: #f5f5f5;
 }
 
 .wrapper {
-  padding: 0 20px;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-
-.ant-switch {
+.app-controls {
   position: fixed;
   right: 20px;
   top: 20px;
-  background-color: #999;
-  z-index:30;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
 
-  &-checked {
+  .ant-switch {
+    background-color: #999;
+  }
+
+  .ant-switch-checked {
     background-color: #333;
   }
 }
 
-.container {
-  max-width: $width-s;
+/* Resume Container */
+.resume-container {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 30px 0;
-  min-height: calc(100vh - 290px);
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-
+/* Main Content */
+.resume-main {
+  padding: 30px 35px;
+  min-width: 0;
+}
 
 /* ----- RWD ---- */
-@include mq('desktop') {
-  
+@include mq('tablet') {
+  .wrapper {
+    padding: 20px 10px;
+  }
+
+  .resume-main {
+    padding: 25px 20px;
+  }
+}
+
+@include mq('phone-l') {
+  .wrapper {
+    padding: 10px 5px;
+  }
+
+  .resume-main {
+    padding: 20px 15px;
+  }
 }
 

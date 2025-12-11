@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 
 import Introduce from './components/introduce/Introduce';
-import Project from './components/project/Project';
+import Highlights from './components/highlights/Highlights';
 import Work from './components/work/Work';
-import Education from './components/education/Education';
-import Anchor from './components/anchor/Anchor';
-import Contact from './components/contact/Contact';
-import About from './components/about/About';
-import Skill from './components/skill/Skill';
 import { Switch } from 'antd';
+import { I18nContext } from './i18n';
 
 import 'antd/dist/antd.css';
 import './scss/index.scss';
 
 class App extends Component {
+  static contextType = I18nContext;
+
   state = {
     isDarkTheme: false,
   };
@@ -26,24 +24,30 @@ class App extends Component {
 
   render() {
     const { isDarkTheme } = this.state;
-    document.body.style.backgroundColor = isDarkTheme ? '#333' : '#fff';
+    const { lang, setLang, t } = this.context;
+    document.body.style.backgroundColor = isDarkTheme ? '#333' : '#f5f5f5';
     return (
       <div className={`wrapper ${isDarkTheme ? 'theme--dark' : ''}`}>
-        <main className='container'>
+        <div className="app-controls">
           <Switch
-            checkedChildren='護眼'
-            unCheckedChildren='一般'
+            checkedChildren={t('app.controls.theme.eye')}
+            unCheckedChildren={t('app.controls.theme.normal')}
             onChange={this.setTheme}
             defaultChecked
           />
+          <Switch
+            checked={lang === 'en'}
+            checkedChildren={t('app.controls.lang.en')}
+            unCheckedChildren={t('app.controls.lang.zh')}
+            onChange={(checked) => setLang(checked ? 'en' : 'zh')}
+          />
+        </div>
+        <main className='resume-container'>
           <Introduce />
-          <Anchor />
-          <Skill />
-          <Project />
-          <Work />
-          <Education />
-          <About />
-          <Contact />
+          <div className='resume-main'>
+            <Highlights />
+            <Work />
+          </div>
         </main>
       </div>
     );

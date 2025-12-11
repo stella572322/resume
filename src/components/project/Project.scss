@@ -1,62 +1,108 @@
-.project {
-  .title {
-    &::before {
-      @extend %weight-font-style;
-      @include pseudo(inline-block, '#');
-      @include position(relative, $top: -2px, $left: -5px);
+/* Contributions Section */
+.contributions {
+  margin-top: 10px;
+}
+
+.contribution-group {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+
+    i {
       color: $main-color;
-      font-size: 22px;
+      margin-right: 8px;
     }
   }
 }
 
-.project__content {
-  cursor: pointer;
-  padding-left: 10px;
+.contribution-item {
+  display: flex;
+  margin-bottom: 15px;
 
-  & ul li.list__item {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: rgba($main-color, 0.1);
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+
+    i {
+      color: $main-color;
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__badge {
+    background: $main-color;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: normal;
+  }
+
+  &__desc {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.6;
 
     strong {
-      min-width: fit-content;
+      color: $main-color;
     }
-  }
-
-  &:hover {
-    @extend %transition;
-    transform: translateX(-10px);
-    border-left: 1px dashed $main-color;
   }
 }
 
-.ant-modal {
-  max-width: calc(100% - 20px);
-  a {
-    margin-right: 10px;
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    li {
-      width: 48%;
-      margin-bottom: 1rem;
-    }
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
+/* ----- RWD ---- */
 @include mq('phone-l') {
-  .project__content {
-    &:hover {
-      transform: none;
-      border-left: none;
+  .contribution-item {
+    &__icon {
+      width: 32px;
+      height: 32px;
+
+      i {
+        font-size: 14px;
+      }
+    }
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__desc {
+      font-size: 11px;
     }
   }
 }

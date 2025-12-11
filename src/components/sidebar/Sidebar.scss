@@ -1,0 +1,334 @@
+/* Sidebar Sections */
+.sidebar-section {
+	padding-bottom: 16px;
+  margin-bottom: 16px;
+	border-bottom: 1px dashed #e0e0e0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @extend %weight-font-style;
+    color: $main-color;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0.1rem;
+  }
+
+  &__decorator {
+    color: $main-color;
+    margin: 0 8px;
+    font-size: 16px;
+  }
+
+  &__content {
+    font-size: 13px;
+  }
+}
+
+/* Target Role List */
+.target-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    color: #555;
+    font-size: 12px;
+    padding: 4px 0;
+    border-bottom: 1px dashed #ddd;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+/* Profile Items */
+.profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  i {
+    color: $main-color;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  &__label {
+    color: #888;
+    font-size: 11px;
+  }
+}
+
+/* Skill Items */
+.skill-item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  &__level {
+    color: #888;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+/* Competency Items */
+.competency-item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__desc {
+    color: #666;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}
+
+/* Endorsement Items */
+.endorsement {
+  background: rgba($main-color, 0.05);
+  border-left: 3px solid $main-color;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-style: italic;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #555;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+
+  cite {
+    color: $main-color;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+/* Certification Items */
+.cert-item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__org {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  &__year {
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+/* Project Items (Sidebar Preview) */
+.project-item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__role {
+    color: #666;
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  &__desc {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+/* Knowledge Sharing Items */
+.sharing-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  i {
+    color: $main-color;
+    margin-right: 10px;
+    width: 16px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__desc {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+}
+
+/* Sidebar Competencies */
+.sidebar-competency {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6px;
+
+    i {
+      color: $main-color;
+      font-size: 14px;
+      margin-right: 8px;
+      margin-top: 2px;
+      width: 16px;
+      text-align: center;
+    }
+  }
+
+  &__titles {
+    flex: 1;
+  }
+
+  &__title {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 1px;
+  }
+
+  &__subtitle {
+    color: #888;
+    font-size: 9px;
+    font-style: italic;
+  }
+
+  &__desc {
+    color: #555;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-left: 24px;
+    padding-left: 10px;
+    border-left: 2px solid rgba($main-color, 0.3);
+
+    strong {
+      color: $main-color;
+      font-weight: 600;
+    }
+  }
+}
+
+/* ----- RWD ---- */
+@include mq('tablet') {
+  .sidebar-section {
+    margin-bottom: 25px;
+  }
+
+  .resume-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .sidebar-section {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include mq('phone-l') {
+  .resume-sidebar {
+    display: block;
+
+    .sidebar-section {
+      margin-bottom: 25px;
+    }
+  }
+}
