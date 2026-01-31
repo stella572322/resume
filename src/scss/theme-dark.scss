@@ -273,6 +273,10 @@
       }
     }
 
+    &__projectTitle {
+      color: lighten($main-color, 15%);
+    }
+
     &__link {
       color: lighten($main-color, 15%);
     }
