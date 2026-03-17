@@ -17,7 +17,7 @@ const Introduce = () => {
       </div>
       <div className="resume-header__info">
         <h1 className="resume-header__name">{t('introduce.name')}</h1>
-        {/* <p className="resume-header__title">Target：Product Manager</p> */}
+        <p className="resume-header__title">Target：Product Manager</p>
         <p className="resume-header__subtitle">{t('introduce.subtitle')}</p>
         <ContactList />
 
